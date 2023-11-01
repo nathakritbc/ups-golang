@@ -11,7 +11,7 @@ func main() {
 	// c, err := apcupsd.Dial("tcp", "localhost:3551", 10*time.Second)
 	// c, err := apcupsd.Dial("tcp", "localhost:3551")
 
-	c, err := apcupsd.Dial("tcp", "localhost:3551")
+	c, _ := apcupsd.Dial("tcp", "localhost:3551")
 
 	// if err != nil {
 	// 	fmt.Printf("เกิดข้อผิดพลาดในการเชื่อมต่อ: %v\n", err)
