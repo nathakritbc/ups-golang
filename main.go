@@ -27,5 +27,7 @@ func main() {
 	fmt.Printf("Status: %s\n", status.Status)
 	fmt.Printf("Battery Charge: %.2f%%\n", status.BatteryChargePercent)
 	fmt.Printf("Battery Voltage: %.2f V\n", status.BatteryVoltage)
+	fmt.Printf("LineVoltage : %.2f V\n", status.LineVoltage)
+
 	fmt.Printf("Load: %.2f%%\n", status.LoadPercent)
 }
