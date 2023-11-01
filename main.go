@@ -9,13 +9,15 @@ import (
 func main() {
 	// เชื่อมต่อกับ APCUPSD server ที่ใช้พอร์ต 3551 บน localhost
 	// c, err := apcupsd.Dial("tcp", "localhost:3551", 10*time.Second)
+	// c, err := apcupsd.Dial("tcp", "localhost:3551")
+
 	c, err := apcupsd.Dial("tcp", "localhost:3551")
 
-	if err != nil {
-		fmt.Printf("เกิดข้อผิดพลาดในการเชื่อมต่อ: %v\n", err)
-		return
-	}
-	defer c.Close()
+	// if err != nil {
+	// 	fmt.Printf("เกิดข้อผิดพลาดในการเชื่อมต่อ: %v\n", err)
+	// 	return
+	// }
+	// defer c.Close()
 
 	// อ่านข้อมูลสถานะจากเครื่อง UPS
 	status, err := c.Status()
