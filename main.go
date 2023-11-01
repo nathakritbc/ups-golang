@@ -30,4 +30,6 @@ func main() {
 	fmt.Printf("LineVoltage : %.2f V\n", status.LineVoltage)
 
 	fmt.Printf("Load: %.2f%%\n", status.LoadPercent)
+
+	fmt.Printf("status : %s\n", status)
 }
